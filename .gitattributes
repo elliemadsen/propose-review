@@ -1,0 +1,2 @@
+img/bigdata.mov filter=lfs diff=lfs merge=lfs -text
+tiles/**/*.png filter=lfs diff=lfs merge=lfs -text
