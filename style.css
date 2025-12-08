@@ -1,0 +1,117 @@
+html,
+body,
+#map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+#overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  pointer-events: auto;
+  text-align: center;
+}
+
+/* fullscreen overlay off the globe */
+.fullscreen {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+  pointer-events: all !important;
+}
+
+.title {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  font-size: 300px;
+  font-weight: lighter;
+}
+
+.title2 {
+  position: absolute;
+  display: block;
+  width: 40%;
+  right: 40px;
+  bottom: 140px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  font-size: 170px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* on the globe */
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.main-quote {
+  font-size: 100px;
+}
+
+.subquote {
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+/* color inversion based on background */
+
+.invert-text {
+  color: white;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+/* image slide styling */
+
+.nyc-emb {
+  display: block;
+  width: 800px;
+  position: relative;
+  top: 50%; /* move down to cancel overlay’s -50% translateY */
+  transform: translate(40%, 40%); /* adjust so top aligns */
+}
+
+.all-emb {
+  display: block;
+  width: 800px;
+  position: relative;
+  top: 50%; /* move down to cancel overlay’s -50% translateY */
+  transform: translateY(15%); /* adjust so top aligns */
+}
