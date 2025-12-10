@@ -41,7 +41,7 @@ map.on("style.load", () => {
 
 const slides = [
   {
-    center: [0, 0],
+    center: [0, 30],
     zoom: 2,
     pitch: 0,
     bearing: 10,
@@ -49,7 +49,7 @@ const slides = [
   },
   // title slide
   {
-    center: [0, 0],
+    center: [0, 30],
     zoom: 2,
     pitch: 0,
     bearing: 10,
@@ -58,20 +58,32 @@ const slides = [
   },
 
   // --------------------------------- RSFM ---------------------------------
+
   // remote sensing foundation models
   {
-    center: [60, 40],
+    center: [65, 20],
     zoom: 2,
     pitch: 0,
     bearing: 0,
+    slide: "rsfm",
     overlay:
       '<div class="fullscreen invert-text"><div class="subtitle">remote sensing foundation models</div></div>',
   },
+  // rsfm papers
   {
-    center: [60, 40],
-    zoom: 6,
+    center: [65, 20],
+    zoom: -1,
     pitch: 0,
     bearing: 0,
+    overlay:
+      '<div class="overlay"><img src="img/remote_sensing_papers.svg" width="1000"/></div>',
+  },
+  {
+    center: [65, 20],
+    zoom: -1,
+    pitch: 0,
+    bearing: 0,
+    transition: 1000,
     overlay:
       '<div class="overlay"><img src="img/rsfm.png" width="1000"/></div>',
   },
@@ -80,17 +92,18 @@ const slides = [
   // --------------------------------- EMBEDDING ---------------------------------
   // on embedding
   {
-    center: [-40, 20],
+    center: [-10, 25],
     zoom: 2,
     pitch: 0,
     bearing: 0,
+    slide: "embedding",
     overlay:
       '<div class="fullscreen invert-text"><div class="subtitle">on embedding</div></div>',
   },
   // alphaearth embedding diagram
   {
-    center: [-40, 20],
-    zoom: 4,
+    center: [-10, 25],
+    zoom: 1,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -98,24 +111,17 @@ const slides = [
   },
   // single vector embedding
   {
-    center: [-90, 40],
+    center: [-80, 40],
     zoom: 9,
     pitch: 0,
-    bearing: -20,
+    bearing: 0,
     overlay:
       '<div class="overlay"><img src="img/nyc_embedding.svg" class="nyc-emb" width="1000"/></div>',
   },
-  //   "nyc": [-73.990422, 40.729914],
+  // "nyc": [-73.990422, 40.729914],
   // "amazon": [-62.566111, -3.135833],
   // "greenland": [-58.489229, 75.864043],
   // "sahara": [25.665556, 23.409444],
-  // {
-  //   center: [-73.990422, 40.729914],
-  //   zoom: 4,
-  //   pitch: 0,
-  //   bearing: 0,
-  //   overlay: null,
-  // },
   {
     center: [-73.990422, 40.729914],
     zoom: 5,
@@ -123,13 +129,6 @@ const slides = [
     bearing: 0,
     overlay: '<div class="overlay"><img src="img/nyc.png" width="400"/></div>',
   },
-  // {
-  //   center: [-73.990422, 40.729914],
-  //   zoom: 2,
-  //   pitch: 0,
-  //   bearing: 0,
-  //   overlay: null,
-  // },
   {
     center: [-62.566111, -3.135833],
     zoom: 5,
@@ -138,30 +137,17 @@ const slides = [
     overlay:
       '<div class="overlay"><img src="img/amazon.png" width="400"/></div>',
   },
-  // {
-  //   center: [-62.566111, -3.135833],
-  //   zoom: 2,
-  //   pitch: 0,
-  //   bearing: 0,
-  //   overlay: null,
-  // },
+
   {
-    center: [-58.489229, 75.864043],
+    center: [-45, 75],
     zoom: 4,
     pitch: 0,
     bearing: 0,
     overlay:
       '<div class="overlay"><img src="img/greenland.png" width="400"/></div>',
   },
-  // {
-  //   center: [-58.489229, 75.864043],
-  //   zoom: 2,
-  //   pitch: 0,
-  //   bearing: 0,
-  //   overlay: null,
-  // },
   {
-    center: [25.665556, 23.409444],
+    center: [25.665556, 15],
     zoom: 5,
     pitch: 0,
     bearing: 0,
@@ -171,13 +157,12 @@ const slides = [
 
   // all 4 together
   {
-    center: [25.665556, 23.409444],
+    center: [25, 0],
     zoom: 9,
     pitch: 0,
     bearing: 0,
-    duration: 1000,
     overlay:
-      '<div class="overlay"><img src="img/all_white.svg" class="all-emb" width="1400"/></div>',
+      '<div class="overlay"><img src="img/all_white.svg" class="all-emb"/></div>',
   },
 
   // --------------------------------- !EMBEDDING ---------------------------------
@@ -185,42 +170,61 @@ const slides = [
   // --------------------------------- DISTANCE ---------------------------------
   // on distance
   {
-    center: [-60, -10],
+    center: [-20, -10],
     zoom: 2,
     pitch: 0,
     bearing: 0,
+    slide: "distance",
+    duration: 4000,
     overlay:
       '<div class="fullscreen invert-text"><div class="subtitle">on distance</div></div>',
   },
   // first law of geography
   {
-    center: [-60, -10],
-    zoom: 4.5,
-    pitch: 0,
-    bearing: 0,
-    overlay:
-      '<div class="overlay invert-text quote"><div class="main-quote">"Everything is related to everything else, but near things are more related than distant things."</div><div class="subquote">— Tobler`s First Law of Geography, 1970</div></div>',
-  },
-
-  // vector graph
-  {
-    center: [-60, -10],
-    zoom: 5,
+    center: [-30, 20],
+    zoom: 1.6,
     pitch: 0,
     bearing: 0,
     duration: 1000,
+
+    overlay:
+      '<div class="overlay invert-text quote"><div class="main-quote">"Everything is related to everything else, but near things are more related than distant things."</div><div class="subquote">— Tobler`s First Law of Geography, 1970</div></div>',
+  },
+  // vector graph
+  {
+    center: [-40, 30],
+    zoom: 4,
+    pitch: 0,
+    bearing: 0,
     overlay:
       '<div class="overlay"><img src="img/vectorgraph.svg" width="800"/></div>',
   },
   // cosine fav camping spot globally
   {
-    center: [-60, -10],
-    zoom: 6,
+    center: [-40, 25],
+    zoom: 5,
     pitch: 0,
     bearing: 0,
-    duration: 1000,
     overlay:
       '<div class="overlay"><img src="img/reddit.png" width="600"/></div>',
+  },
+  // dist exp grid small
+  {
+    center: [-40, 20],
+    zoom: 5,
+    pitch: 0,
+    bearing: 0,
+    overlay:
+      '<div class="overlay"><img src="img/small-dist-grid.png" width="600"/></div>',
+  },
+  // dist exp grid big
+  {
+    center: [-40, 15],
+    zoom: 5,
+    pitch: 0,
+    bearing: 0,
+    overlay:
+      '<div class="overlay"><img src="img/big-dist-grid.png" width="600"/></div>',
   },
   // two point projection
   {
@@ -228,7 +232,7 @@ const slides = [
     zoom: -0.5,
     pitch: 0,
     bearing: 100,
-    duration: 2000,
+    duration: 3000,
     overlay: null,
   },
   {
@@ -247,7 +251,7 @@ const slides = [
     zoom: 5,
     pitch: 0,
     bearing: 0,
-    duration: 1000,
+    duration: 2000,
     overlay: null,
   },
   {
@@ -258,18 +262,10 @@ const slides = [
     duration: 1000,
     overlay: '<div class="overlay"><img src="img/gaza.png" width="500"/></div>',
   },
-  {
-    center: [34.4638, 31.5011],
-    zoom: 3,
-    pitch: 0,
-    bearing: 0,
-    duration: 1000,
-    overlay: null,
-  },
   // petermann 80.66854584650483, -60.43951416710328
   {
-    center: [-60.43951, 80.6685],
-    zoom: 3.5,
+    center: [-40, 75],
+    zoom: 3,
     pitch: 0,
     bearing: 0,
     duration: 2000,
@@ -285,61 +281,38 @@ const slides = [
       '<div class="overlay"><img src="img/petermann.png" width="500"/></div>',
   },
   // eqip 69.80352592011315, -50.125022426971775
-  {
-    center: [-50.125, 69.803],
-    zoom: 5,
-    pitch: 0,
-    bearing: 0,
-    duration: 1000,
-    overlay: null,
-  },
+  // {
+  //   center: [-50.125, 69.803],
+  //   zoom: 5,
+  //   pitch: 0,
+  //   bearing: 0,
+  //   duration: 1000,
+  //   overlay: null,
+  // },
   {
     center: [-50.125, 69.803],
     zoom: 7,
     pitch: 0,
     bearing: 0,
-    duration: 1000,
     overlay: '<div class="overlay"><img src="img/eqip.png" width="500"/></div>',
   },
 
   // --------------------------------- !DISTANCE ---------------------------------
 
-  // --------------------------------- TEMPORALITY ---------------------------------
-
-  // rsfm papers
-  {
-    center: [-50, 30],
-    zoom: 4.5,
-    pitch: 0,
-    bearing: 0,
-    overlay:
-      '<div class="overlay"><img src="img/remote_sensing_papers.svg" width="1000"/></div>',
-  },
-  // time gif
-  {
-    center: [-50, 30],
-    zoom: 7,
-    pitch: 0,
-    bearing: 0,
-    duration: 1000,
-    overlay:
-      '<div class="overlay"><img src="img/temporality.gif" width="500"/></div>',
-  },
-  // --------------------------------- !TEMPORALITY ---------------------------------
-
   // --------------------------------- ARCHIVE ---------------------------------
   {
-    center: [120, -30],
-    zoom: 2,
+    center: [-80, 60],
+    zoom: 1,
     pitch: 0,
     bearing: 0,
+    slide: "archive",
     overlay:
       '<div class="fullscreen invert-text"><div class="subtitle">data as archive</div></div>',
   },
   // Our brains are dulled by the incurable mania that consists in reducing the unknown to what is known, to what can be filed.
   {
-    center: [120, -30],
-    zoom: 4.5,
+    center: [-80, 60],
+    zoom: 0,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -348,8 +321,8 @@ const slides = [
 
   // vscode video
   {
-    center: [120, -30],
-    zoom: 4.5,
+    center: [-80, 64],
+    zoom: 0,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -358,8 +331,8 @@ const slides = [
 
   // who knows the river better
   {
-    center: [120, -30],
-    zoom: 4.5,
+    center: [-80, 60],
+    zoom: 0,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -375,13 +348,14 @@ const slides = [
     zoom: 2,
     pitch: 0,
     bearing: 0,
+    slide: "space",
     overlay:
       '<div class="fullscreen invert-text"><div class="subtitle">on spatiality</div></div>',
   },
   // Kurgan GPS quote
   {
     center: [-60, -10],
-    zoom: 5,
+    zoom: 1,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -389,7 +363,7 @@ const slides = [
   },
   {
     center: [-60, -10],
-    zoom: 6,
+    zoom: 1,
     pitch: 0,
     bearing: 0,
     duration: 1000,
@@ -399,33 +373,33 @@ const slides = [
 
   // imagine a sphere but 64d
   {
-    center: [-115, 0],
-    zoom: 5,
+    center: [-50, 30],
+    zoom: 4.5,
     pitch: 0,
     bearing: 0,
     overlay:
-      '<div class="overlay"><img src="img/3dsphere.png" width="1000"/></div>',
+      '<div class="overlay"><img src="img/3dsphere.png" width="800"/></div>',
   },
 
   // wisconsin 44.46512387800765, -90.32378987278722
-  {
-    center: [-90, 44],
-    zoom: 3,
-    pitch: 0,
-    bearing: 0,
-    overlay: null,
-  },
+  // {
+  //   center: [-80, 0],
+  //   zoom: 3,
+  //   pitch: 0,
+  //   bearing: 0,
+  //   overlay: null,
+  // },
   // false color
   {
-    center: [-90, 44],
-    zoom: 3,
+    center: [-80, 30],
+    zoom: 2,
     pitch: 0,
     bearing: 0,
     overlay: '<div class="overlay invert-text subtitle">false color</div>',
   },
   {
     center: [-90, 44],
-    zoom: 9,
+    zoom: 5,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -435,7 +409,7 @@ const slides = [
   // dimensionality reduction
   {
     center: [-90, 44],
-    zoom: 3,
+    zoom: 2,
     pitch: 0,
     bearing: 0,
     overlay:
@@ -445,23 +419,74 @@ const slides = [
   // point cloud iframe
   {
     center: [-90, 44],
-    zoom: 3,
+    zoom: 2,
     pitch: 0,
     bearing: 0,
+    slide: "pointcloud",
     overlay:
-      '<iframe src="https://elliemadsen.github.io/satellite-embeddings/dimension-reduction/point_cloud.html" class="fullscreen" tabindex="-1"></iframe>',
+      '<iframe src="https://elliemadsen.github.io/satellite-embeddings/dimension-reduction/point_cloud.html" class="iframe-slide"></iframe>',
   },
 
   // --------------------------------- !SPACE ---------------------------------
+
+  // --------------------------------- END ---------------------------------
+
+  {
+    center: [-10, 40],
+    zoom: 2,
+    pitch: 0,
+    bearing: 0,
+    slide: "end",
+    overlay:
+      '<div class="fullscreen invert-text"><div class="subtitle">proposal<div class="subquote">embedding earth</div><div class="right subquote">a critical atlas of planetary computation</div></div></div>',
+  },
+  {
+    center: [-10, 40],
+    zoom: 2,
+    pitch: 0,
+    bearing: 0,
+    overlay:
+      '<div class="fullscreen invert-text"><div class="list right">visualization<br>experimental data analysis<br>writing<br>critical cartography<br>speculation<br>topology<br>projection</div></div>',
+  },
+  {
+    center: [-10, 40],
+    zoom: 2,
+    pitch: 0,
+    bearing: 0,
+    overlay:
+      '<div class="fullscreen invert-text"><div class="list">On dimensionality<br>On scale<br>On distance<br>On temporality<br>On form<br>On sparsity<br>Data as archive<br>Elemental media<br>Earth as search engine<br>Planetary computation</div></div>',
+  },
+  {
+    center: [-10, 40],
+    zoom: 2,
+    pitch: 0,
+    bearing: 0,
+    overlay:
+      '<div class="fullscreen invert-text"><div class="citations">Alphaearth foundations: An embedding field model for accurate and efficient global mapping from sparse label data<br>Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications<br>Operational Images: From the Visual to the Invisual<br>Close Up At A Distance<br>Low-dimensional embeddings of high-dimensional data<br>The Case for a Centralized Earth Observation Vector Embeddings Catalog<br>Uncertain Archives: Approaching the Unknowns, Errors, and Vulnerabilities of Big Data through Cultural Theories of the Archive<br>All Data Are Local: Thinking Critically in a Data-Driven Society<br>For a Planetary Thinking<br>The Perception Machine: Our Photographic Future between the Eye and AI<br>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction<br>Becoming Planetary<br>Nature Represents Itself: Bibliophilia in a Changing Climate<br>ChatGPT Is a Blurry JPEG of the Web<br>Playing Nature: Ecology in Video Games<br>Imperatives to Re-Imagine the Planet<br>Critical Atlas of Internet<br>Satellite Collections<br>Days Without Clouds: Realism, Images, and Target Classifiers at Google Earth Engine<br>People manipulate objects (but cultivate fields): Beyond the raster-vector debate in GIS<br>Zoom: Google Earth and Global Intimacy</div></div>',
+  },
+
+  // --------------------------------- !END ---------------------------------
 ];
 
-let currentSlide = 0;
 const overlayContainer = document.getElementById("overlay-container");
+
+function getSlideFromHash() {
+  const hash = window.location.hash.slice(1); // remove #
+  console.log("hash:", hash);
+  const index = slides.findIndex((s) => s.slide === hash);
+  console.log("index:", index);
+  return index !== -1 ? index : 0; // default to first slide if not found
+}
 
 function showSlide(index) {
   const slide = slides[index];
 
-  overlayContainer.innerHTML = ""; // clear immediately
+  // update URL hash
+  if (slide.slide) {
+    history.replaceState(null, "", `#${slide.slide}`);
+  }
+
+  overlayContainer.innerHTML = ""; // clear prev slide
 
   // --- Wait for animation to reach the final camera state ---
   function waitForFinalFrame() {
@@ -481,7 +506,6 @@ function showSlide(index) {
     ) {
       map.off("move", waitForFinalFrame);
 
-      // Now safely add overlay
       if (slide.overlay) {
         overlayContainer.innerHTML = slide.overlay;
         updateOverlayPosition(slide.center);
@@ -522,16 +546,19 @@ map.on("move", () => {
 // Spacebar navigation
 document.addEventListener("keydown", (e) => {
   if (e.code === "Space") {
+    console.log("space pressed");
     e.preventDefault();
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
   }
   if (e.code === "Backspace") {
     e.preventDefault();
-    currentSlide = (currentSlide - 1) % slides.length;
+    currentSlide = currentSlide - 1 < 0 ? slides.length - 1 : currentSlide - 1;
     showSlide(currentSlide);
   }
 });
 
-// Show first slide
+// Initialize current slide from hash (only slides with a `slide` property, else 0)
+let currentSlide = getSlideFromHash();
+console.log("currentSlide: ", currentSlide);
 showSlide(currentSlide);

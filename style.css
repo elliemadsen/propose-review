@@ -36,14 +36,13 @@ body,
   width: 100% !important;
   height: 100% !important;
   transform: none !important;
-  pointer-events: all !important;
 }
 
 .title {
   position: absolute;
-  left: 40px;
-  top: 20px;
-  font-size: 300px;
+  left: 8%;
+  top: 8%;
+  font-size: 350px;
   font-weight: lighter;
 }
 
@@ -51,9 +50,9 @@ body,
   position: absolute;
   display: block;
   width: 40%;
-  right: 40px;
-  bottom: 140px;
-  font-size: 60px;
+  right: 10%;
+  bottom: 20%;
+  font-size: 80px;
   font-weight: lighter;
 }
 
@@ -88,6 +87,25 @@ body,
   margin-top: 20px;
 }
 
+.list {
+  font-size: 8vh;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.citations {
+  font-size: 3.5vh;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.right {
+  text-align: right;
+  margin-right: 2%;
+}
+
 /* color inversion based on background */
 
 .invert-text {
@@ -110,8 +128,16 @@ body,
 
 .all-emb {
   display: block;
-  width: 800px;
+  width: 1200px;
   position: relative;
   top: 50%; /* move down to cancel overlay’s -50% translateY */
-  transform: translateY(15%); /* adjust so top aligns */
+  transform: translateY(30%); /* adjust so top aligns */
+}
+
+.iframe-slide {
+  margin-left: 2%;
+  width: 98%;
+  height: 100%;
+  border: none;
+  pointer-events: auto;
 }
