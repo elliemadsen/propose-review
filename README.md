@@ -3,7 +3,7 @@ Ellie Madsen <br>
 Columbia University Graduate School of Architecture, Preservation, and Planning <br>
 Computational Design Practices <br>
 
-## Hypothesis
+## Research Statement
 
 Collective understanding of embedded data in Earth Observation lags behind the rapid production of remote sensing foundation models. Data visualization, critical cartography, media studies, and theories of the archive offer vital conceptual frameworks to situate this novel technology in the context of the broader trajectory of digital ecology and to provide human-comprehensible form and meaning to high-dimensional latent space.
 
@@ -86,6 +86,50 @@ The fact that the global embedding data is precomputed and hosted within Google 
 
 To work within these constraints, I converted raw embedding data into false-color GeoTIFFs and generated low-resolution PNG tiles, enabling the creation of a web-based globe hosted independently of Google Earth Engine.
 
-In the Spring, I will explore the use of NASA’s open-source Prithvi 2.0 model through my research with Columbia’s Center for Climate Systems Research, in collaboration with NASA’s Goddard Institute for Space Studies. This work focuses on modeling climate impacts on the New York watershed and will grant access to NASA compute resources and datasets.
+In the Spring, I will explore the use of NASA’s open-source Prithvi 2.0 model through my research with Columbia’s Center for Climate Systems Research, in collaboration with NASA’s Goddard Institute for Space Studies. This work focuses on modeling climate impacts on the New York watershed and will grant me access to NASA compute resources and datasets.
 
 While the final output will be an atlas of Earth embedding technologies broadly, rather than a single proprietary model, technical constraints make it likely that AlphaEarth will remain the primary dataset for analysis and visualization.
+
+## Bibliography
+
+Agostinho, Daniela, et al. “Uncertain Archives: Approaching the Unknowns, Errors, and Vulnerabilities of Big Data through Cultural Theories of the Archive.” Surveillance & Society 17, no. 3–4 (2019): 422–441. https://doi.org/10.24908/ss.v17i3/4.12330
+
+Bodt, Cyril de, et al. “Low-Dimensional Embeddings of High-Dimensional Data.” arXiv (2025). https://doi.org/10.48550/arXiv.2508.15929
+
+Brown, Christopher F., et al. “AlphaEarth Foundations: An Embedding Field Model for Accurate and Efficient Global Mapping from Sparse Label Data.” arXiv (2025). https://doi.org/10.48550/arXiv.2507.22291
+
+Chang, Alenda Y. Playing Nature: Ecology in Video Games. University of Minnesota Press, 2019. https://doi.org/10.5749/j.ctvthhd94
+
+“ChatGPT Is a Blurry JPEG of the Web.” The New Yorker. https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
+
+Couclelis, Helen. “People Manipulate Objects (but Cultivate Fields): Beyond the Raster–Vector Debate in GIS.” In Theories and Methods of Spatio-Temporal Reasoning in Geographic Space, edited by A. U. Frank et al., 65–77. Lecture Notes in Computer Science 639. Springer, 1992. https://doi.org/10.1007/3-540-55966-3_3
+
+Feng, Zhengpeng, et al. “TESSERA: Precomputed FAIR Global Pixel Embeddings for Earth Representation and Analysis.” arXiv (2025). https://doi.org/10.48550/arXiv.2506.20380
+
+“For a Planetary Thinking.” e-flux Journal 114. https://www.e-flux.com/journal/114/366703/for-a-planetary-thinking
+
+Gabrys, Jennifer. “Accumulation – Becoming Planetary.” e-flux Architecture. https://www.e-flux.com/architecture/accumulation/217051/becoming-planetary
+
+Gilman, Jason, et al. “The Case for a Centralized Earth Observation Vector Embeddings Catalog.” White paper. https://github.com/Element84/vector-embeddings-catalog-whitepaper
+
+Huang, Ziyue, et al. “A Survey on Remote Sensing Foundation Models: From Vision to Multimodality.” arXiv (2025). https://doi.org/10.48550/arXiv.2503.22081
+
+Huo, Chunlei, et al. “When Remote Sensing Meets Foundation Model: A Survey and Beyond.” Remote Sensing 17, no. 2 (2025). https://doi.org/10.3390/rs17020179
+
+Kurgan, Laura. Close Up at a Distance: Mapping, Technology, and Politics. Zone Books, 2013. https://doi.org/10.2307/j.ctt14bs159
+
+Loukissas, Yanni Alexander. All Data Are Local: Thinking Critically in a Data-Driven Society. MIT Press, 2019. https://direct.mit.edu/books/oa-monograph/4323/All-Data-Are-LocalThinking-Critically-in-a-Data
+
+McInnes, Leland, John Healy, and James Melville. “UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction.” arXiv (2020). https://doi.org/10.48550/arXiv.1802.03426
+
+“Nature Represents Itself: Bibliophilia in a Changing Climate.” In What If Culture Was Nature All Along? Cambridge University Press. https://www.cambridge.org/core/books/abs/what-if-culture-was-nature-all-along/nature-represents-itself-bibliophilia-in-a-changing-climate/49CBCA484B7DD40FB54F8C1DC9FF96F6
+
+Palma, Vittoria Di. “Zoom: Google Earth and Global Intimacy.” In Digital Earth. Routledge. https://doi.org/10.4324/9780203890059-18
+
+Parikka, Jussi. Operational Images: From the Visual to the Invisual. University of Minnesota Press, 2023. https://www.jstor.org/stable/10.5749/j.ctv2z86232
+
+Sansone Ruiz, Nicole. “Days Without Clouds: Realism, Images, and Target Classifiers at Google Earth Engine.” Computational Culture 9 (2023). http://computationalculture.net/days-without-clouds-realism-images-and-target-classifiers-at-google-earth-engine/
+
+Szwarcman, Daniela, et al. “Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications.” arXiv (2025). https://doi.org/10.48550/arXiv.2412.02732
+
+Zylinska, Joanna. The Perception Machine: Our Photographic Future between the Eye and AI. MIT Press, 2020. https://direct.mit.edu/books/oa-monograph/5687/The-Perception-MachineOur-Photographic-Future
