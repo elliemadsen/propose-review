@@ -42,17 +42,17 @@ body,
   position: absolute;
   left: 8%;
   top: 8%;
-  font-size: 350px;
+  font-size: 16em;
   font-weight: lighter;
 }
 
 .title2 {
   position: absolute;
   display: block;
-  width: 40%;
-  right: 10%;
-  bottom: 20%;
-  font-size: 80px;
+  width: 42%;
+  right: 8%;
+  bottom: 24%;
+  font-size: 4em;
   font-weight: lighter;
 }
 
